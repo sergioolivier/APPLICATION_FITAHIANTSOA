@@ -1,37 +1,240 @@
-# FITAHIANTSOA — Prototype d'application
+# FITAHIANTSOA — Application Marketplace
 
-Ce dossier contient une version **prête à héberger** de l'application FITAHIANTSOA :
+<p align="center">
+  <img src="assets/fitahiantsoa-app.png" alt="Application FITAHIANTSOA" width="900">
+</p>
 
-- `index.html` — l'application complète (React + Babel + icônes Lucide chargés depuis un CDN), avec le logo et les vraies photos de matériel intégrés directement dans le fichier. **Aucune installation ni build n'est nécessaire** : ouvrez simplement ce fichier dans un navigateur, ou déployez-le tel quel.
-- `FitahiantsoaApp.jsx` — le même composant, au format `.jsx` pur, si votre équipe veut l'intégrer plus tard dans un vrai projet React Native/Expo ou React web avec un build (Vite, Next.js, etc.).
+<p align="center">
+  <strong>Une plateforme numérique dédiée au matériel agricole, au commerce et aux services à Madagascar.</strong>
+</p>
 
-## Ajouter ça à votre dépôt GitHub
+---
 
-Je n'ai pas d'accès direct à votre compte GitHub (aucun connecteur n'est activé dans cette conversation), donc voici la marche à suivre de votre côté — 2 minutes :
+## Présentation
 
-### Option A — directement depuis l'interface GitHub (le plus simple)
-1. Allez sur votre dépôt (ou créez-en un nouveau sur https://github.com/new si ce n'est pas encore fait).
-2. Cliquez sur **Add file → Upload files**.
-3. Glissez-déposez `index.html` (et `FitahiantsoaApp.jsx` si vous voulez le garder en référence).
-4. Validez le commit.
+FITAHIANTSOA est un prototype d'application de marketplace développé pour une entreprise malgache spécialisée dans la fourniture et la distribution de matériel agricole.
 
-### Option B — en ligne de commande, depuis votre ordinateur
-```bash
-git clone https://github.com/sergioolivier/<nom-du-depot>.git
-cd <nom-du-depot>
-# copiez index.html (et FitahiantsoaApp.jsx) téléchargés depuis cette conversation dans ce dossier
-git add index.html FitahiantsoaApp.jsx
-git commit -m "Ajout du prototype de l'application FITAHIANTSOA"
-git push
-```
+La plateforme a pour objectif de faciliter la mise en relation entre les clients, les fournisseurs, les employés, les partenaires logistiques et l'administration de l'entreprise.
 
-## Afficher l'application en ligne (GitHub Pages)
+L'activité principale est centrée sur le matériel agricole, avec une architecture permettant d'étendre progressivement la plateforme à plusieurs secteurs : tourisme, artisanat, électronique, mode, véhicules, santé et autres services.
 
-Une fois `index.html` poussé sur le dépôt :
-1. Dans le dépôt GitHub → **Settings → Pages**.
-2. Sous « Build and deployment » → Source : **Deploy from a branch**.
-3. Branche : `main` (ou `master`), dossier : `/ (root)`.
-4. Enregistrez. Après 1 à 2 minutes, l'application sera visible à une adresse du type :
-   `https://sergioolivier.github.io/<nom-du-depot>/`
+Le projet est actuellement développé sous forme de prototype frontend et est conçu pour évoluer vers une véritable application mobile connectée à une API backend et à une base de données.
 
-Vous pourrez alors partager ce lien tel quel — n'importe qui pourra naviguer dans l'app (accueil, catalogue, panier, commande, suivi, et les 5 espaces via « Changer d'espace ») sans rien installer.
+---
+
+## Objectifs du projet
+
+Le projet vise à développer une plateforme permettant de :
+
+- présenter les produits et équipements disponibles ;
+- faciliter la recherche et l'achat de matériel ;
+- permettre aux fournisseurs de proposer leurs produits ;
+- centraliser la gestion des commandes ;
+- suivre les livraisons ;
+- gérer les utilisateurs selon leurs rôles ;
+- faciliter la communication entre les différents acteurs ;
+- développer progressivement une marketplace multi-secteurs ;
+- préparer l'intégration d'un backend et de services externes.
+
+---
+
+## Contexte de l'entreprise
+
+FITAHIANTSOA importe et distribue différents équipements agricoles à Madagascar, notamment :
+
+- motoculteurs diesel Changfa ;
+- tracteurs 4 roues Hong Yuan ;
+- motopompes diesel NS-150 ;
+- décortiqueuses de riz ;
+- moteurs diesel ;
+- pièces détachées ;
+- kits de charrues à disques.
+
+Les principaux clients peuvent être des agriculteurs individuels, des coopératives agricoles ainsi que des organismes et institutions intervenant dans le développement agricole.
+
+L'application constitue une évolution numérique de cette activité, avec l'objectif de faciliter la commercialisation, la gestion des produits et la coordination des commandes et des livraisons.
+
+---
+
+# Fonctionnalités
+
+## Espace Client
+
+L'espace client permet de :
+
+- consulter la page d'accueil ;
+- rechercher des produits ;
+- parcourir le catalogue ;
+- filtrer les produits ;
+- consulter les caractéristiques détaillées ;
+- consulter les avis et évaluations ;
+- ajouter des produits aux favoris ;
+- gérer le panier ;
+- passer une commande ;
+- sélectionner un moyen de paiement ;
+- suivre une commande ;
+- consulter l'historique des commandes ;
+- gérer son profil et ses adresses ;
+- recevoir des notifications ;
+- rechercher un produit à l'aide d'un QR code ou d'un code-barres.
+
+### Moyens de paiement prévus
+
+- Mobile Money ;
+- carte bancaire ;
+- virement bancaire.
+
+---
+
+## Espace Fournisseur
+
+L'espace fournisseur permet de :
+
+- consulter un tableau de bord ;
+- ajouter des produits ;
+- ajouter des photos ;
+- renseigner les caractéristiques des produits ;
+- gérer les stocks ;
+- consulter les commandes ;
+- suivre les ventes ;
+- consulter les revenus ;
+- suivre l'état de validation des produits.
+
+---
+
+## Espace Employé
+
+L'espace employé permet notamment de :
+
+- consulter les produits soumis par les fournisseurs ;
+- vérifier les informations des produits ;
+- accepter un produit ;
+- demander une modification ;
+- refuser un produit ;
+- gérer certaines commandes ;
+- traiter les réclamations des clients.
+
+---
+
+## Espace Administrateur
+
+L'administrateur dispose d'un tableau de bord global permettant de suivre :
+
+- le chiffre d'affaires ;
+- les utilisateurs ;
+- les commandes ;
+- les commissions ;
+- les statistiques de vente ;
+- les fournisseurs ;
+- les catégories ;
+- les campagnes marketing ;
+- l'activité générale de la plateforme.
+
+---
+
+## Espace Partenaire Logistique
+
+Le partenaire logistique peut :
+
+- consulter ses missions de livraison ;
+- accepter ou refuser une mission ;
+- consulter les informations d'une livraison ;
+- mettre à jour le statut d'une livraison ;
+- suivre les livraisons en cours ;
+- utiliser ultérieurement la géolocalisation.
+
+---
+
+# Catégories de la marketplace
+
+La plateforme est principalement orientée vers l'agriculture, tout en permettant une extension vers différents secteurs.
+
+| Catégorie | Exemples |
+|---|---|
+| Agriculture | Tracteurs, motoculteurs, motopompes, équipements |
+| Tourisme | Produits et services touristiques |
+| Artisanat | Produits artisanaux locaux |
+| Électronique | Matériel et équipements électroniques |
+| Mode | Vêtements et accessoires |
+| Véhicules | Véhicules et équipements |
+| Santé | Matériel médical |
+| Autres | Produits et services divers |
+
+---
+
+# Interface utilisateur
+
+L'interface reprend l'identité visuelle de FITAHIANTSOA et s'inspire de l'agriculture, de la nature et de Madagascar.
+
+## Principes de conception
+
+- interface moderne et professionnelle ;
+- conception orientée mobile ;
+- navigation simple et intuitive ;
+- hiérarchie claire des informations ;
+- composants cohérents ;
+- boutons adaptés aux écrans tactiles ;
+- design responsive ;
+- expérience utilisateur adaptée aux différents profils.
+
+## Identité visuelle
+
+La palette principale utilise :
+
+- vert forêt profond ;
+- vert naturel ;
+- ocre et or ;
+- terre cuite ;
+- vert sauge et crème.
+
+L'objectif est de créer une identité visuelle différente des interfaces SaaS génériques et davantage liée à l'univers agricole et au contexte malgache.
+
+---
+
+# Écrans du prototype
+
+Le prototype comprend actuellement plusieurs interfaces :
+
+1. Écran d'accueil
+2. Catalogue
+3. Recherche et filtres
+4. Fiche produit
+5. Panier
+6. Tunnel de commande
+7. Suivi de commande
+8. Tableau de bord fournisseur
+9. Tableau de bord employé
+10. Tableau de bord administrateur
+11. Tableau de bord logistique
+12. Sélection et changement d'espace
+
+---
+
+# Technologies utilisées
+
+| Technologie | Utilisation |
+|---|---|
+| React | Construction de l'interface |
+| JavaScript | Logique applicative |
+| JSX | Structure des composants |
+| CSS | Mise en forme et responsive design |
+| Lucide | Icônes de l'interface |
+| React Native / Expo | Évolution prévue vers l'application mobile |
+| API REST | Communication avec le backend prévue |
+| Base de données | Stockage des données prévu |
+
+---
+
+# Structure du projet
+
+```text
+APPLICATION_FITAHIANTSOA/
+│
+├── assets/
+│   └── fitahiantsoa-app.png
+│
+├── index.html
+│
+├── FitahiantsoaApp.jsx
+│
+└── README.md
