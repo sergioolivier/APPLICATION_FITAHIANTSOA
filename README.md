@@ -220,9 +220,6 @@ Le prototype comprend actuellement plusieurs interfaces :
 | JSX | Structure des composants |
 | CSS | Mise en forme et responsive design |
 | Lucide | Icônes de l'interface |
-| React Native / Expo | Évolution prévue vers l'application mobile |
-| API REST | Communication avec le backend prévue |
-| Base de données | Stockage des données prévu |
 
 ---
 
