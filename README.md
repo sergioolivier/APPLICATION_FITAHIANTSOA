@@ -1,7 +1,7 @@
 # FITAHIANTSOA — Application Marketplace
 
 <p align="center">
-  <img src="assets/fitahiantsoa-app.png" alt="Application FITAHIANTSOA" width="900">
+  <img src="assets/ChatGPT Image 16 sept. 2026, 10_10_49.png" alt="Application FITAHIANTSOA" width="900">
 </p>
 
 <p align="center">
