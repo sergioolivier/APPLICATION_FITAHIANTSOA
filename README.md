@@ -220,6 +220,7 @@ Le prototype comprend actuellement plusieurs interfaces :
 | JSX | Structure des composants |
 | CSS | Mise en forme et responsive design |
 | Lucide | Icônes de l'interface |
+| Images en base64 | photos de matériel et le logo |
 
 ---
 
